@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,sans]{moderncv}
 
 % moderncv themes
 \moderncvstyle{casual}
@@ -11,7 +11,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3.75cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
@@ -22,7 +22,7 @@
 %\phone[fixed]{+32~9367~78~10}
 %\email{vaneeckhout.pieter@gmail.com}
 %\homepage{www.pietervaneeckhout.com}
-\photo[96pt][0.4pt]{./images/profilepicture.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[76pt][0.4pt]{./images/profilepicture.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -33,6 +33,9 @@
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
+
+\usepackage{layout}
+\setlength{\textheight}{710pt}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -53,33 +56,43 @@
 \cvitem{}{In bezit van rijbewijs B en eigen wagen}
 
 \section{Opleiding}
-\cventry{2010--2013}{Bachelor in de toegepaste informatica}{Hogeschool Gent}{}{}{Optie programmeren}
+\cventry{2000--2006}{Middelbaar ASO}{Sint-Gertrudiscollege}{Wetteren}{}{Wetenschappen-Wiskunde}
+\cventry{2006--2008}{Academische Bachelor Lichamelijke opvoeding en bewegingswetenschappen}{Universiteit Gent}{}{}{gestopt wegens blessures}
+\cventry{2008--2010}{Bachelor in het onderwijs: Secundair onderwijs - informatica en lichamelije opvoeding}{Artevlede Hogeschool Gent}{}{}{gestopt wegens andere interesses}
+\cventry{2010--2013}{Bachelor in de toegepaste informatica}{Hogeschool Gent}{Optie programmeren}{}{afgestudeerd met onderscheiding}
 \subsection{Bachelor thesis}
 \cvitem{titel}{\emph{Solving CAPTCHA using neural networks}}
 \cvitem{begeleiders}{Johan {Van Schoor}, Bert {Van Vreckem}}
 \cvitem{beschrijving}{Onderzoek naar en experimentele implementatie van neurale netwerken met als doel het oplossen van letterherkenning.}
-\cventry{2000--2006}{Middelbaar ASO}{Sint-Gertrudiscollege}{Wetteren}{}{Wetenschappen-Wiskunde}
 
 \section{Extra opleidingen}
-\cventry{2013}{CvO Bootcamp}{Hogeschool Centrum voor Ondernemen}{Gent}{}{communicatie en presentatie technieken}
-\cventry{2013}{Intensive Erasmus Project}{Hochschule Hof Duitsland}{}{}{SAP ERP Application fusion}
+\cventry{2013}{CvO Bootcamp}{Hogeschool Centrum voor Ondernemen}{Gent}{1 weekend}{communicatie en presentatie technieken}
+\cventry{2013}{Intensive Erasmus Project}{Hochschule Hof}{Hof, Duitsland}{1 week}{SAP ERP Application fusion}
 
 \section{Werkervaringen via stage en studentenjobs}
 \subsection{beroepsgebonden}
 \cventry{2013\newline{}1 maand}{webontwikkelaar}{Sofico}{Gent}{}{\underline{Jobstudent:} De bestaande dynamische website 'responsive' (mobile ready) maken en vertalingen verbeteren.\newline{}taal: Java; Javascript; HTML5; CSS; XML}
 \cventry{2013\newline{}3 maand}{Onderzoeker business intelligence and analytics}{Sofico}{Zwijnaarde}{België}{\underline{Stage in functie van het behalen van bachelordiploma.}\newline{}Onderzoek naar en integratie van BI oplossingen in huidige systeem.\newline{}taal: Java; Spring; ANT; Javascript; HTML5; CSS; XML}
 \cventry{2009\newline{}1 maand}{Assistent prgrammeur}{Universiteit Gent: Laboratorium Magnel}{Zwijnaarde}{}{\underline{Jobstudent:} assisteren bij maken van het nieuwe digitale onderzoeksplatform.\newline{}taal: Visual Basic}
+\subsection{ }
 \subsection{Varia}
 \cventry{2013\newline{}augustus en weekendwerk september - november}{Fabrieksarbeider}{Callebaut via Adecco}{Aalst}{}{\underline{Jobstudent:} orderpicker\newline{}ploegen}
 \cventry{2011\newline{}1 maand}{Fabrieksarbeider}{Desso via Randstad}{Dendermonde}{}{\underline{Jobstudent:} vervangen en splicen van bobijnen\newline{}ploegen}
 \cventry{2006--2010\newline{}jaarlijks 1 maand}{Fabrieksarbeider}{Resilux via Tempo Team}{Wetteren}{}{\underline{Jobstudent:} inpakker, dozenmaker, machine onderhoud\newline{}ploegen}
 
 \section{Talenkennis}
+\begin{cvcolumns}
+  \cvcolumn{Nederlands}{moedertaal}
+  \cvcolumn{Engels}{zeer goed}
+  \cvcolumn{Frans}{goed}
+  \cvcolumn{Duits}{matig}
+\end{cvcolumns}
+\iffalse
 \cvitem{nederlands}{moedertaal}
 \cvitem{engels}{zeer goed}
 \cvitem{frans}{goed}
 \cvitem{duits}{matig}
-
+\fi
 \section{Computer vaardigheden}
 \cvitem{programmeertalen}{Algemeen OO-ontwerp en principes; Java; C\#; basis C en C++} 
 \cvitem{besturingsystemen}{Windows; Linux}
@@ -89,12 +102,13 @@
 \cvitem{sport}{Ik heb 13 jaar karate, 17 jaar turnen en 10 jaar muurklimmen beoefend.}
 \cvitem{technologie}{Ik ben zeer ge\"interesseerd in de nieuwste technologische ontwikkelingen, zowel op vlak van hardware als software.}
 
-\iffalse
 \section{References}
+\cventry{Stagementor}{Kristof Hillaert}{kristof.hillaert@sofico.be}{Team Leader Web and Business Intelligence Solutions}{Sofico}{}
+\iffalse
 \begin{cvcolumns}
-  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+  \cvcolumn{Naam}{\begin{itemize}\item Kristof Hillaert\end{itemize}}
+  \cvcolumn{Functie}{\begin{itemize}\item Team leader Web \amp Business Intelligence Solutions, Sofico\end{itemize}}
+  \cvcolumn{Contact}{kristof.hillaert@sofico.be}
 \end{cvcolumns}
 \fi
 
